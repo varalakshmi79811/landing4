@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Music Website HTML & CSS</title>
+	
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Kanit:wght@600&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+        *
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body 
+{
+  background-color: black;
+}
+
+.container
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  height: 75%;
+}
+
+ul 
+{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	gap: 35%;
+}
+
+li a 
+{
+	text-decoration: none;
+	color: white;
+	font-size: 1.3rem;
+	font-family: cursive;
+	transition: 0.7s ease;
+	font-family: 'Gabarito', cursive;
+font-family: 'Kanit', sans-serif;
+}
+
+li a:hover 
+{
+	background-color: white;
+	color: black;
+}
+
+span 
+{
+	color: red;
+	font-size: 3.5rem;
+	font-family: fantasy;
+}
+
+
+.body-section
+{
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 25%;
+}
+
+h2
+{
+	color: white;
+	font-size: 6rem;
+	letter-spacing: 2px;
+  font-family: 'Kanit', sans-serif;
+  text-transform: uppercase;
+}
+ 
+ p
+ {
+ 	color: whitesmoke;
+ 	font-size: 3rem;
+ 	font-family: 'Gabarito', cursive;
+font-family: 'Kanit', sans-serif;
+ }
+
+h1
+{
+	font-size: 2rem;
+	font-family: fantasy;
+	padding: 25px;
+	color: white;
+}
+
+audio 
+{
+	margin-top: 5%;
+}
+
+.footer
+{
+	width: 100%;
+	height: 100%;
+	padding: 80px;
+}
+
+h4 
+{
+  text-align: center;
+  color: white;
+  font-family: 'Gabarito', cursive;
+font-family: 'Kanit', sans-serif;
+letter-spacing: 1px;
+font-size: 1rem;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: lightgrey;
+}
+
+h4 
+{
+	color: white;
+	padding-top: 5%;
+}
+
+
+.footer-img 
+{
+	text-align: center;
+	padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Add these sections within the <body> tag after the existing content -->
+
+
+
+<div class="container">
+	<div class="header">
+	<h1><span>M</span>usic</h1>
+    </div>
+
+  </div>
+<div id="home">
+<div class="body-section">
+	
+	<div class="content">
+		<h2>KOLLAGOTTEY</h2>
+		<p>REMO</p>
+		<audio controls>
+        <source src="kollagottey.mp4" type="audio/mp4">
+          Your browser does not support the audio element. 
+        <audio>
+	</div>
+
+	<div class="image">
+		<img src="kollagottey.jpeg" width="300" height="300">
+	</div>
+</div>
+
+<div class="footer-box">
+	<h4>Copyrights @ 2023 - Kollagottey</h4>
+	<div class="footer-img">
+		<a href="https://open.spotify.com/track/0V6XoG8tWC7xhUNwYLOGYL"><img src="spotify.jpeg" width="30" height="30"></a>
+        <a href="https://music.apple.com/au/song/kollagottey/1172699906"><img src="apple.jpeg" width="30" height="30"></a>
+        <a href="https://wynk.in/music/song/kollagottey/sm_A10328E0008080528R"><img src="wynk.jpeg" width="30" height="30"></a>
+		<a href="https://www.jiosaavn.com/song/kollagottey/O1pSYTtUVUE"><img src="jio.jpeg" width="30" height="30"></a>
+	</div>
+</div>
+</div>
+</body>
+</html>
